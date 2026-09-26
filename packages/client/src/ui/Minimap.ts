@@ -55,7 +55,7 @@ export class Minimap {
     this.drawFloor(t);
     this.ctx.putImageData(this.image, 0, 0);
 
-    for (const c of frame.cubes) this.marker(t, c.x, c.z, 3, 'rgba(255,255,255,0.85)');
+    for (const c of frame.cubes) this.marker(t, c.x, c.z, 1, 'rgba(255,255,255,0.35)'); // faint specks; players should stand out
     for (const p of frame.players) this.marker(t, p.x, p.z, 3, p.color);
     this.drawMe(t, frame.me);
   }
