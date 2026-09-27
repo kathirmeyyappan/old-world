@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/', // Served at world.kathirm.com (root)
+  base: '/old-world/', // Served at kathirm.com/old-world
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
